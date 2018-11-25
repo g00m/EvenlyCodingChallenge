@@ -1,0 +1,6 @@
+framework module Pods_EvenlyCodingChallengeUITests {
+  umbrella header "Pods-EvenlyCodingChallengeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

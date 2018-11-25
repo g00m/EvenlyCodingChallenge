@@ -14,6 +14,9 @@
 		935F0C3021AACA51009781C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935F0C2E21AACA51009781C1 /* LaunchScreen.storyboard */; };
 		935F0C3B21AACA51009781C1 /* EvenlyCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F0C3A21AACA51009781C1 /* EvenlyCodingChallengeTests.swift */; };
 		935F0C4621AACA51009781C1 /* EvenlyCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F0C4521AACA51009781C1 /* EvenlyCodingChallengeUITests.swift */; };
+		A821B1EC1B3E9B9852A5DB4B /* Pods_EvenlyCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A9A6C6496C3F3DDBC89E60 /* Pods_EvenlyCodingChallengeUITests.framework */; };
+		CB93F2C60072CED8EA24E136 /* Pods_EvenlyCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA611B2A284AD8E31FD15DAC /* Pods_EvenlyCodingChallenge.framework */; };
+		EFBDB5D21D131CD92FD7DDF3 /* Pods_EvenlyCodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E0E5EEF321428FEC83FF1A /* Pods_EvenlyCodingChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,15 @@
 		935F0C4121AACA51009781C1 /* EvenlyCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvenlyCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		935F0C4521AACA51009781C1 /* EvenlyCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenlyCodingChallengeUITests.swift; sourceTree = "<group>"; };
 		935F0C4721AACA51009781C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EEE11FBAE88B1E42DE5ECE2 /* Pods-EvenlyCodingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvenlyCodingChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EvenlyCodingChallengeTests/Pods-EvenlyCodingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		AD2411F641DE68913E8DD79A /* Pods-EvenlyCodingChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvenlyCodingChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EvenlyCodingChallengeUITests/Pods-EvenlyCodingChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B2A9A6C6496C3F3DDBC89E60 /* Pods_EvenlyCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvenlyCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4816E58DC185770C8F69234 /* Pods-EvenlyCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvenlyCodingChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-EvenlyCodingChallenge/Pods-EvenlyCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		C12FF9ED52FF1302DC4FFA26 /* Pods-EvenlyCodingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvenlyCodingChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EvenlyCodingChallengeTests/Pods-EvenlyCodingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6E0E5EEF321428FEC83FF1A /* Pods_EvenlyCodingChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvenlyCodingChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D3E58DE384333F6E434AC1 /* Pods-EvenlyCodingChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvenlyCodingChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EvenlyCodingChallengeUITests/Pods-EvenlyCodingChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D91069DDCE22482EFF257CB6 /* Pods-EvenlyCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvenlyCodingChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EvenlyCodingChallenge/Pods-EvenlyCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		DA611B2A284AD8E31FD15DAC /* Pods_EvenlyCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvenlyCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB93F2C60072CED8EA24E136 /* Pods_EvenlyCodingChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFBDB5D21D131CD92FD7DDF3 /* Pods_EvenlyCodingChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A821B1EC1B3E9B9852A5DB4B /* Pods_EvenlyCodingChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		192B4D7CCF0B2126B90CFD4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D91069DDCE22482EFF257CB6 /* Pods-EvenlyCodingChallenge.debug.xcconfig */,
+				B4816E58DC185770C8F69234 /* Pods-EvenlyCodingChallenge.release.xcconfig */,
+				C12FF9ED52FF1302DC4FFA26 /* Pods-EvenlyCodingChallengeTests.debug.xcconfig */,
+				9EEE11FBAE88B1E42DE5ECE2 /* Pods-EvenlyCodingChallengeTests.release.xcconfig */,
+				D6D3E58DE384333F6E434AC1 /* Pods-EvenlyCodingChallengeUITests.debug.xcconfig */,
+				AD2411F641DE68913E8DD79A /* Pods-EvenlyCodingChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		935F0C1921AACA4E009781C1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				935F0C3921AACA51009781C1 /* EvenlyCodingChallengeTests */,
 				935F0C4421AACA51009781C1 /* EvenlyCodingChallengeUITests */,
 				935F0C2321AACA4E009781C1 /* Products */,
+				192B4D7CCF0B2126B90CFD4E /* Pods */,
+				C638AF5206156D0512E29026 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +155,16 @@
 			path = EvenlyCodingChallengeUITests;
 			sourceTree = "<group>";
 		};
+		C638AF5206156D0512E29026 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA611B2A284AD8E31FD15DAC /* Pods_EvenlyCodingChallenge.framework */,
+				C6E0E5EEF321428FEC83FF1A /* Pods_EvenlyCodingChallengeTests.framework */,
+				B2A9A6C6496C3F3DDBC89E60 /* Pods_EvenlyCodingChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 935F0C4A21AACA51009781C1 /* Build configuration list for PBXNativeTarget "EvenlyCodingChallenge" */;
 			buildPhases = (
+				7304E027A861812ACAF6308C /* [CP] Check Pods Manifest.lock */,
 				935F0C1E21AACA4E009781C1 /* Sources */,
 				935F0C1F21AACA4E009781C1 /* Frameworks */,
 				935F0C2021AACA4E009781C1 /* Resources */,
+				6045DF39998DE548497E5256 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 935F0C4D21AACA51009781C1 /* Build configuration list for PBXNativeTarget "EvenlyCodingChallengeTests" */;
 			buildPhases = (
+				0D912861905567798B2FA6C0 /* [CP] Check Pods Manifest.lock */,
 				935F0C3221AACA51009781C1 /* Sources */,
 				935F0C3321AACA51009781C1 /* Frameworks */,
 				935F0C3421AACA51009781C1 /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 935F0C5021AACA51009781C1 /* Build configuration list for PBXNativeTarget "EvenlyCodingChallengeUITests" */;
 			buildPhases = (
+				9B9144FDADF3D2974B9BE0D6 /* [CP] Check Pods Manifest.lock */,
 				935F0C3D21AACA51009781C1 /* Sources */,
 				935F0C3E21AACA51009781C1 /* Frameworks */,
 				935F0C3F21AACA51009781C1 /* Resources */,
@@ -250,6 +294,83 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D912861905567798B2FA6C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EvenlyCodingChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6045DF39998DE548497E5256 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EvenlyCodingChallenge/Pods-EvenlyCodingChallenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/p2.OAuth2/p2_OAuth2.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/p2_OAuth2.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EvenlyCodingChallenge/Pods-EvenlyCodingChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7304E027A861812ACAF6308C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EvenlyCodingChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B9144FDADF3D2974B9BE0D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EvenlyCodingChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		935F0C1E21AACA4E009781C1 /* Sources */ = {
@@ -430,6 +551,7 @@
 		};
 		935F0C4B21AACA51009781C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91069DDCE22482EFF257CB6 /* Pods-EvenlyCodingChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +570,7 @@
 		};
 		935F0C4C21AACA51009781C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4816E58DC185770C8F69234 /* Pods-EvenlyCodingChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +589,7 @@
 		};
 		935F0C4E21AACA51009781C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C12FF9ED52FF1302DC4FFA26 /* Pods-EvenlyCodingChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +611,7 @@
 		};
 		935F0C4F21AACA51009781C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EEE11FBAE88B1E42DE5ECE2 /* Pods-EvenlyCodingChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +633,7 @@
 		};
 		935F0C5121AACA51009781C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D3E58DE384333F6E434AC1 /* Pods-EvenlyCodingChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +654,7 @@
 		};
 		935F0C5221AACA51009781C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD2411F641DE68913E8DD79A /* Pods-EvenlyCodingChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

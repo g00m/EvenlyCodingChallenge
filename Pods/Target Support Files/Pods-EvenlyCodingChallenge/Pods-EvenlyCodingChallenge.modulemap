@@ -1,0 +1,6 @@
+framework module Pods_EvenlyCodingChallenge {
+  umbrella header "Pods-EvenlyCodingChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
