@@ -1,20 +1,30 @@
 PODS:
   - Alamofire (4.7.3)
-  - p2.OAuth2 (3.0.3)
+  - p2.OAuth2 (4.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
-  - p2.OAuth2 (~> 3.0)
+  - p2.OAuth2 (from `https://github.com/p2/OAuth2`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
-    - p2.OAuth2
+
+EXTERNAL SOURCES:
+  p2.OAuth2:
+    :git: https://github.com/p2/OAuth2
+    :submodules: true
+
+CHECKOUT OPTIONS:
+  p2.OAuth2:
+    :commit: e81b4bc4a3cfc3d11b62aba07241ceeb0684ac07
+    :git: https://github.com/p2/OAuth2
+    :submodules: true
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  p2.OAuth2: 63d8d3e366ac2c43bfe8bfa13b42cfeb908c314e
+  p2.OAuth2: fdc2effef37793a8f775dd4760bc4c1ea906c956
 
-PODFILE CHECKSUM: 24bf9b2b8c559a703692ceaea8e35470c182efed
+PODFILE CHECKSUM: 60a6fed8ab425c57a402901a1968bb98ed61328e
 
 COCOAPODS: 1.5.3

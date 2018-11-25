@@ -7,7 +7,8 @@ target 'EvenlyCodingChallenge' do
 
   # Pods for EvenlyCodingChallenge
   pod 'Alamofire', '~> 4.7'
-  pod 'p2.OAuth2', '~> 3.0'
+  #pod 'p2.OAuth2', '~> 3.0'
+  pod 'p2.OAuth2', :git => 'https://github.com/p2/OAuth2', :submodules => true
 
 
   target 'EvenlyCodingChallengeTests' do
