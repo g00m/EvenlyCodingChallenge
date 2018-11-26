@@ -11,9 +11,13 @@
 		935F0C2B21AACA4E009781C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935F0C2921AACA4E009781C1 /* Main.storyboard */; };
 		935F0C2D21AACA51009781C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 935F0C2C21AACA51009781C1 /* Assets.xcassets */; };
 		935F0C3021AACA51009781C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935F0C2E21AACA51009781C1 /* LaunchScreen.storyboard */; };
-		935F0C3B21AACA51009781C1 /* EvenlyCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F0C3A21AACA51009781C1 /* EvenlyCodingChallengeTests.swift */; };
 		935F0C4621AACA51009781C1 /* EvenlyCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F0C4521AACA51009781C1 /* EvenlyCodingChallengeUITests.swift */; };
 		935F0C5421AACD4F009781C1 /* POITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F0C5321AACD4F009781C1 /* POITableViewController.swift */; };
+		935F0C5821AACE01009781C1 /* ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F0C5721AACE01009781C1 /* ApiTests.swift */; };
+		935F0C5B21AACE35009781C1 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F0C5A21AACE35009781C1 /* ApiService.swift */; };
+		935F0C6021AADCA8009781C1 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 935F0C5F21AADCA8009781C1 /* Config.plist */; };
+		935F0C6121AADE56009781C1 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 935F0C5F21AADCA8009781C1 /* Config.plist */; };
+		939E52F421AC80A700CF722F /* FoursquareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939E52F321AC80A700CF722F /* FoursquareResponse.swift */; };
 		A821B1EC1B3E9B9852A5DB4B /* Pods_EvenlyCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A9A6C6496C3F3DDBC89E60 /* Pods_EvenlyCodingChallengeUITests.framework */; };
 		CB93F2C60072CED8EA24E136 /* Pods_EvenlyCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA611B2A284AD8E31FD15DAC /* Pods_EvenlyCodingChallenge.framework */; };
 		EFBDB5D21D131CD92FD7DDF3 /* Pods_EvenlyCodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E0E5EEF321428FEC83FF1A /* Pods_EvenlyCodingChallengeTests.framework */; };
@@ -44,12 +48,15 @@
 		935F0C2F21AACA51009781C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		935F0C3121AACA51009781C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935F0C3621AACA51009781C1 /* EvenlyCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvenlyCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		935F0C3A21AACA51009781C1 /* EvenlyCodingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenlyCodingChallengeTests.swift; sourceTree = "<group>"; };
 		935F0C3C21AACA51009781C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935F0C4121AACA51009781C1 /* EvenlyCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvenlyCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		935F0C4521AACA51009781C1 /* EvenlyCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvenlyCodingChallengeUITests.swift; sourceTree = "<group>"; };
 		935F0C4721AACA51009781C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935F0C5321AACD4F009781C1 /* POITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POITableViewController.swift; sourceTree = "<group>"; };
+		935F0C5721AACE01009781C1 /* ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTests.swift; sourceTree = "<group>"; };
+		935F0C5A21AACE35009781C1 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		935F0C5F21AADCA8009781C1 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		939E52F321AC80A700CF722F /* FoursquareResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareResponse.swift; sourceTree = "<group>"; };
 		9EEE11FBAE88B1E42DE5ECE2 /* Pods-EvenlyCodingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvenlyCodingChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EvenlyCodingChallengeTests/Pods-EvenlyCodingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		AD2411F641DE68913E8DD79A /* Pods-EvenlyCodingChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvenlyCodingChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EvenlyCodingChallengeUITests/Pods-EvenlyCodingChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B2A9A6C6496C3F3DDBC89E60 /* Pods_EvenlyCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvenlyCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +134,8 @@
 		935F0C2421AACA4E009781C1 /* EvenlyCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				935F0C5C21AACEA9009781C1 /* model */,
+				935F0C5921AACE1F009781C1 /* services */,
 				935F0C5621AACD65009781C1 /* viewcontroller */,
 				935F0C2521AACA4E009781C1 /* AppDelegate.swift */,
 				935F0C2921AACA4E009781C1 /* Main.storyboard */,
@@ -140,7 +149,7 @@
 		935F0C3921AACA51009781C1 /* EvenlyCodingChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				935F0C3A21AACA51009781C1 /* EvenlyCodingChallengeTests.swift */,
+				935F0C5721AACE01009781C1 /* ApiTests.swift */,
 				935F0C3C21AACA51009781C1 /* Info.plist */,
 			);
 			path = EvenlyCodingChallengeTests;
@@ -161,6 +170,23 @@
 				935F0C5321AACD4F009781C1 /* POITableViewController.swift */,
 			);
 			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		935F0C5921AACE1F009781C1 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				935F0C5A21AACE35009781C1 /* ApiService.swift */,
+				935F0C5F21AADCA8009781C1 /* Config.plist */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		935F0C5C21AACEA9009781C1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				939E52F321AC80A700CF722F /* FoursquareResponse.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		C638AF5206156D0512E29026 /* Frameworks */ = {
@@ -281,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935F0C6021AADCA8009781C1 /* Config.plist in Resources */,
 				935F0C3021AACA51009781C1 /* LaunchScreen.storyboard in Resources */,
 				935F0C2D21AACA51009781C1 /* Assets.xcassets in Resources */,
 				935F0C2B21AACA4E009781C1 /* Main.storyboard in Resources */,
@@ -291,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935F0C6121AADE56009781C1 /* Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,8 +413,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939E52F421AC80A700CF722F /* FoursquareResponse.swift in Sources */,
 				935F0C5421AACD4F009781C1 /* POITableViewController.swift in Sources */,
 				935F0C2621AACA4E009781C1 /* AppDelegate.swift in Sources */,
+				935F0C5B21AACE35009781C1 /* ApiService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				935F0C3B21AACA51009781C1 /* EvenlyCodingChallengeTests.swift in Sources */,
+				935F0C5821AACE01009781C1 /* ApiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +529,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -553,6 +584,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
