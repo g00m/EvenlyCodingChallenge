@@ -7,25 +7,40 @@
 //
 
 import UIKit
+import Alamofire
 
 class POITableViewController: UITableViewController {
+
+    private var dataSource: POITableViewDatasource<UITableViewCell, Items>!
+    private var viewModel: POIViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        viewModel = POIViewModel(apiService: ApiService(
+            config: parseConfig(filename: "Config"),
+            sessionManager: SessionManager()),
+            updateListener: {
+
+                self.dataSource = POITableViewDatasource(cellIdentifier: "Cell",
+                    items: self.viewModel.items,
+                    configureCell: { cell, model in
+                        cell.textLabel?.text = model.venue.name
+                    })
+
+                self.tableView.dataSource = self.dataSource
+                self.tableView.reloadData()
+
+            })
+
     }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    // TODO - Needs to vanish
+    func parseConfig(filename: String) -> FoursquareConfig {
+        let url = Bundle.main.url(forResource: filename, withExtension: "plist")!
+        let data = try! Data(contentsOf: url)
+        let decoder = PropertyListDecoder()
+        return try! decoder.decode(FoursquareConfig.self, from: data)
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
 
 }

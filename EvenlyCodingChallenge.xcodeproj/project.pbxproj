@@ -18,6 +18,9 @@
 		935F0C6021AADCA8009781C1 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 935F0C5F21AADCA8009781C1 /* Config.plist */; };
 		935F0C6121AADE56009781C1 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 935F0C5F21AADCA8009781C1 /* Config.plist */; };
 		939E52F421AC80A700CF722F /* FoursquareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939E52F321AC80A700CF722F /* FoursquareResponse.swift */; };
+		939E52F621AC898300CF722F /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939E52F521AC898300CF722F /* ViewModelTests.swift */; };
+		939E52F921AC8CCD00CF722F /* POITableViewDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939E52F821AC8CCD00CF722F /* POITableViewDatasource.swift */; };
+		939E52FC21AC92F700CF722F /* POIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939E52FB21AC92F700CF722F /* POIViewModel.swift */; };
 		A821B1EC1B3E9B9852A5DB4B /* Pods_EvenlyCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A9A6C6496C3F3DDBC89E60 /* Pods_EvenlyCodingChallengeUITests.framework */; };
 		CB93F2C60072CED8EA24E136 /* Pods_EvenlyCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA611B2A284AD8E31FD15DAC /* Pods_EvenlyCodingChallenge.framework */; };
 		EFBDB5D21D131CD92FD7DDF3 /* Pods_EvenlyCodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E0E5EEF321428FEC83FF1A /* Pods_EvenlyCodingChallengeTests.framework */; };
@@ -57,6 +60,9 @@
 		935F0C5A21AACE35009781C1 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		935F0C5F21AADCA8009781C1 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		939E52F321AC80A700CF722F /* FoursquareResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareResponse.swift; sourceTree = "<group>"; };
+		939E52F521AC898300CF722F /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
+		939E52F821AC8CCD00CF722F /* POITableViewDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POITableViewDatasource.swift; sourceTree = "<group>"; };
+		939E52FB21AC92F700CF722F /* POIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIViewModel.swift; sourceTree = "<group>"; };
 		9EEE11FBAE88B1E42DE5ECE2 /* Pods-EvenlyCodingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvenlyCodingChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EvenlyCodingChallengeTests/Pods-EvenlyCodingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		AD2411F641DE68913E8DD79A /* Pods-EvenlyCodingChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvenlyCodingChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EvenlyCodingChallengeUITests/Pods-EvenlyCodingChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B2A9A6C6496C3F3DDBC89E60 /* Pods_EvenlyCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvenlyCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +140,8 @@
 		935F0C2421AACA4E009781C1 /* EvenlyCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				939E52FA21AC92E900CF722F /* viewmodel */,
+				939E52F721AC8CA700CF722F /* datasource */,
 				935F0C5C21AACEA9009781C1 /* model */,
 				935F0C5921AACE1F009781C1 /* services */,
 				935F0C5621AACD65009781C1 /* viewcontroller */,
@@ -150,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				935F0C5721AACE01009781C1 /* ApiTests.swift */,
+				939E52F521AC898300CF722F /* ViewModelTests.swift */,
 				935F0C3C21AACA51009781C1 /* Info.plist */,
 			);
 			path = EvenlyCodingChallengeTests;
@@ -175,8 +184,8 @@
 		935F0C5921AACE1F009781C1 /* services */ = {
 			isa = PBXGroup;
 			children = (
-				935F0C5A21AACE35009781C1 /* ApiService.swift */,
 				935F0C5F21AADCA8009781C1 /* Config.plist */,
+				935F0C5A21AACE35009781C1 /* ApiService.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -187,6 +196,22 @@
 				939E52F321AC80A700CF722F /* FoursquareResponse.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		939E52F721AC8CA700CF722F /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				939E52F821AC8CCD00CF722F /* POITableViewDatasource.swift */,
+			);
+			path = datasource;
+			sourceTree = "<group>";
+		};
+		939E52FA21AC92E900CF722F /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				939E52FB21AC92F700CF722F /* POIViewModel.swift */,
+			);
+			path = viewmodel;
 			sourceTree = "<group>";
 		};
 		C638AF5206156D0512E29026 /* Frameworks */ = {
@@ -414,9 +439,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				939E52F421AC80A700CF722F /* FoursquareResponse.swift in Sources */,
+				939E52FC21AC92F700CF722F /* POIViewModel.swift in Sources */,
 				935F0C5421AACD4F009781C1 /* POITableViewController.swift in Sources */,
 				935F0C2621AACA4E009781C1 /* AppDelegate.swift in Sources */,
 				935F0C5B21AACE35009781C1 /* ApiService.swift in Sources */,
+				939E52F921AC8CCD00CF722F /* POITableViewDatasource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +451,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939E52F621AC898300CF722F /* ViewModelTests.swift in Sources */,
 				935F0C5821AACE01009781C1 /* ApiTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
