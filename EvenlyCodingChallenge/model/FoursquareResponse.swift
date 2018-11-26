@@ -19,11 +19,11 @@ struct Response: Codable {
 }
 
 struct Groups: Codable {
-    let items: [Items]
+    let items: [Item]
     enum CodingKeys: String, CodingKey { case items }
 }
 
-struct Items: Codable {
+struct Item: Codable {
     let venue: POI
     enum CodingKeys: String, CodingKey { case venue }
 }
