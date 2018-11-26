@@ -14,7 +14,7 @@ class POIViewModel {
     private let updateListener: Listener
     private let apiService: ApiService
     
-    private (set) var items: [Items] = [Items]()
+    private (set) var items: [Item] = [Item]()
     
     init(apiService: ApiService, updateListener: @escaping Listener) {
         self.apiService = apiService
@@ -29,5 +29,9 @@ class POIViewModel {
             
             self.updateListener()
         }
+    }
+    
+    func getItemAtRow(_atRow row: Int) -> Item {
+        return self.items[row]
     }
 }

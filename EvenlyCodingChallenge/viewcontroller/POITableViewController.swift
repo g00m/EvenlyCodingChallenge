@@ -8,16 +8,19 @@
 
 import UIKit
 import Alamofire
+import MapKit
 
 class POITableViewController: UITableViewController {
 
-    private var dataSource: POITableViewDatasource<UITableViewCell, Items>!
+    private var dataSource: POITableViewDatasource<UITableViewCell, Item>!
+    private var delegate: POITableViewDelegate!
+
     private var viewModel: POIViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewModel = POIViewModel(apiService: ApiService(
+        self.viewModel = POIViewModel(apiService: ApiService(
             config: parseConfig(filename: "Config"),
             sessionManager: SessionManager()),
             updateListener: {
@@ -33,6 +36,36 @@ class POITableViewController: UITableViewController {
 
             })
 
+        self.delegate = POITableViewDelegate { row in
+            self.showActionSheet(_forItem: self.viewModel.getItemAtRow(_atRow: row))
+        }
+        self.tableView.delegate = self.delegate
+
+    }
+
+    private func showActionSheet (_forItem item: Item) {
+        let alert = UIAlertController(title: item.venue.name,
+            message: nil,
+            preferredStyle: .actionSheet)
+
+        alert.addAction(UIAlertAction(title: "Share on Foursquare", style: .default) { UIAlertAction in
+            
+        })
+        alert.addAction(UIAlertAction(title: "Open in Maps", style: .default) { UIAlertAction in
+            self.openMaps(_forItem: item)
+        })
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+
+        self.present(alert, animated: true, completion: nil)
+
+    }
+
+    func openMaps(_forItem item : Item) {
+        let coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(item.venue.location.lat),
+            CLLocationDegrees(item.venue.location.lng))
+        let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinate, addressDictionary: nil))
+        mapItem.name = item.venue.name
+        mapItem.openInMaps()
     }
 
     // TODO - Needs to vanish
