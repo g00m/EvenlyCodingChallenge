@@ -18,18 +18,10 @@ class ApiTests: XCTestCase {
     var networkRequestExpectation: XCTestExpectation!
 
     override func setUp() {
-        let config = parseConfig()
         
         apiService = ApiService(
-            config: config,
+            config: parseConfig(filename: "Config"),
             sessionManager: SessionManager())
-    }
-    
-    func parseConfig() -> FoursquareConfig {
-        let url = Bundle.main.url(forResource: "Config", withExtension: "plist")!
-        let data = try! Data(contentsOf: url)
-        let decoder = PropertyListDecoder()
-        return try! decoder.decode(FoursquareConfig.self, from: data)
     }
     
     func testNetworkRequest() {
