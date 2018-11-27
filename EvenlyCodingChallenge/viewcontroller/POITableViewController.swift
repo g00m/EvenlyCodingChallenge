@@ -82,12 +82,4 @@ class POITableViewController: UITableViewController {
         mapItem.openInMaps()
     }
 
-    // TODO - Needs to vanish
-    func parseConfig(filename: String) -> FoursquareConfig {
-        let url = Bundle.main.url(forResource: filename, withExtension: "plist")!
-        let data = try! Data(contentsOf: url)
-        let decoder = PropertyListDecoder()
-        return try! decoder.decode(FoursquareConfig.self, from: data)
-    }
-
 }
