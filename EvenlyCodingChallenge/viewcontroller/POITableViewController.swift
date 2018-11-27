@@ -28,7 +28,7 @@ class POITableViewController: UITableViewController {
                 self.dataSource = POITableViewDatasource(cellIdentifier: "Cell",
                     items: self.viewModel.items,
                     configureCell: { cell, model in
-                        cell.bind(item: model)                        
+                        cell.bind(item: model)
                     })
 
                 self.tableView.dataSource = self.dataSource
@@ -64,12 +64,12 @@ class POITableViewController: UITableViewController {
     }
 
     private func showShareSheet(_forItem item: Item) {
-        
+
         let headline = "Check out this awesome place it is called \(item.venue.name)\n\n"
 
         if let fsqLink = NSURL(string: "https://foursquare.com/v/\(item.venue.id)") {
             let activityVC = UIActivityViewController(activityItems: [headline, fsqLink],
-                                                      applicationActivities: nil)
+                applicationActivities: nil)
 
             self.present(activityVC, animated: true, completion: nil)
         }
