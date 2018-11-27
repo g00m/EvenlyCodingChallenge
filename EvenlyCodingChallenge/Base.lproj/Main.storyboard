@@ -14,17 +14,67 @@
             <objects>
                 <tableViewController id="971-rm-JGI" customClass="POITableViewController" customModule="EvenlyCodingChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uQV-4Q-eE0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="MOs-Wq-w76">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="100" id="MOs-Wq-w76" customClass="POITableViewCell" customModule="EvenlyCodingChallenge" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MOs-Wq-w76" id="ryo-57-TGb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxN-g9-vVC">
+                                            <rect key="frame" x="16" y="11" width="288" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice Street 3 " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhz-GI-ciz">
+                                            <rect key="frame" x="16" y="63" width="288" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beerhouse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdY-aF-bWs">
+                                            <rect key="frame" x="16" y="40" width="208" height="12"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123 m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUe-5e-Bqu">
+                                            <rect key="frame" x="224" y="40" width="80" height="12"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="OIO-7V-0FN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="AxN-g9-vVC" secondAttribute="trailing" id="3pt-Q0-oYB"/>
+                                        <constraint firstItem="oUe-5e-Bqu" firstAttribute="leading" secondItem="wdY-aF-bWs" secondAttribute="trailing" id="6OA-Fs-bQh"/>
+                                        <constraint firstItem="fhz-GI-ciz" firstAttribute="leading" secondItem="ryo-57-TGb" secondAttribute="leading" constant="16" id="AHB-rM-C7l"/>
+                                        <constraint firstItem="oUe-5e-Bqu" firstAttribute="top" secondItem="AxN-g9-vVC" secondAttribute="bottom" constant="8" id="Iyy-iA-Ckl"/>
+                                        <constraint firstItem="wdY-aF-bWs" firstAttribute="leading" secondItem="ryo-57-TGb" secondAttribute="leadingMargin" id="RCh-ok-QX2"/>
+                                        <constraint firstItem="oUe-5e-Bqu" firstAttribute="trailing" secondItem="ryo-57-TGb" secondAttribute="trailingMargin" id="Ugn-d4-F9n"/>
+                                        <constraint firstAttribute="bottom" secondItem="fhz-GI-ciz" secondAttribute="bottom" constant="19.5" id="a7z-wI-Spf"/>
+                                        <constraint firstAttribute="trailing" secondItem="fhz-GI-ciz" secondAttribute="trailing" constant="16" id="aAz-Lf-glW"/>
+                                        <constraint firstItem="oUe-5e-Bqu" firstAttribute="top" secondItem="AxN-g9-vVC" secondAttribute="bottom" constant="8" id="cW0-i8-Lg3"/>
+                                        <constraint firstItem="AxN-g9-vVC" firstAttribute="leading" secondItem="ryo-57-TGb" secondAttribute="leadingMargin" id="fgn-Hf-OCl"/>
+                                        <constraint firstItem="wdY-aF-bWs" firstAttribute="top" secondItem="AxN-g9-vVC" secondAttribute="bottom" constant="8" id="ilE-1x-Oci"/>
+                                        <constraint firstItem="AxN-g9-vVC" firstAttribute="top" secondItem="ryo-57-TGb" secondAttribute="topMargin" id="l2T-kD-NGS"/>
+                                        <constraint firstItem="oUe-5e-Bqu" firstAttribute="leading" secondItem="fhz-GI-ciz" secondAttribute="trailing" constant="-80" id="wnF-6V-IuY"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="addressLabel" destination="fhz-GI-ciz" id="LKd-3h-FM8"/>
+                                    <outlet property="categoryLabel" destination="wdY-aF-bWs" id="JPU-Ar-icX"/>
+                                    <outlet property="distanceLabel" destination="oUe-5e-Bqu" id="hQ2-qw-gwa"/>
+                                    <outlet property="titleLabel" destination="AxN-g9-vVC" id="67O-ik-6M8"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -35,6 +85,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r8h-uU-Np4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

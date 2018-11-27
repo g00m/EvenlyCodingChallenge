@@ -22,6 +22,7 @@
 		939E52FC21AC92F700CF722F /* POIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939E52FB21AC92F700CF722F /* POIViewModel.swift */; };
 		939E52FF21AC944200CF722F /* POITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939E52FE21AC944200CF722F /* POITableViewDelegate.swift */; };
 		939E530721ADE2BE00CF722F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939E530621ADE2BE00CF722F /* Util.swift */; };
+		939E530A21ADE68000CF722F /* POITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939E530921ADE68000CF722F /* POITableViewCell.swift */; };
 		A821B1EC1B3E9B9852A5DB4B /* Pods_EvenlyCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A9A6C6496C3F3DDBC89E60 /* Pods_EvenlyCodingChallengeUITests.framework */; };
 		CB93F2C60072CED8EA24E136 /* Pods_EvenlyCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA611B2A284AD8E31FD15DAC /* Pods_EvenlyCodingChallenge.framework */; };
 		EFBDB5D21D131CD92FD7DDF3 /* Pods_EvenlyCodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E0E5EEF321428FEC83FF1A /* Pods_EvenlyCodingChallengeTests.framework */; };
@@ -65,6 +66,7 @@
 		939E52FB21AC92F700CF722F /* POIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIViewModel.swift; sourceTree = "<group>"; };
 		939E52FE21AC944200CF722F /* POITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POITableViewDelegate.swift; sourceTree = "<group>"; };
 		939E530621ADE2BE00CF722F /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		939E530921ADE68000CF722F /* POITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POITableViewCell.swift; sourceTree = "<group>"; };
 		9EEE11FBAE88B1E42DE5ECE2 /* Pods-EvenlyCodingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvenlyCodingChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EvenlyCodingChallengeTests/Pods-EvenlyCodingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		AD2411F641DE68913E8DD79A /* Pods-EvenlyCodingChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvenlyCodingChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EvenlyCodingChallengeUITests/Pods-EvenlyCodingChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B2A9A6C6496C3F3DDBC89E60 /* Pods_EvenlyCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvenlyCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +149,7 @@
 				939E52FA21AC92E900CF722F /* viewmodel */,
 				939E52F721AC8CA700CF722F /* datasource */,
 				939E52FD21AC941F00CF722F /* delegate */,
+				939E530821ADE64700CF722F /* cells */,
 				935F0C5621AACD65009781C1 /* viewcontroller */,
 				935F0C2521AACA4E009781C1 /* AppDelegate.swift */,
 				935F0C2921AACA4E009781C1 /* Main.storyboard */,
@@ -223,6 +226,14 @@
 				939E52FE21AC944200CF722F /* POITableViewDelegate.swift */,
 			);
 			path = delegate;
+			sourceTree = "<group>";
+		};
+		939E530821ADE64700CF722F /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				939E530921ADE68000CF722F /* POITableViewCell.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		C638AF5206156D0512E29026 /* Frameworks */ = {
@@ -454,6 +465,7 @@
 				935F0C2621AACA4E009781C1 /* AppDelegate.swift in Sources */,
 				935F0C5B21AACE35009781C1 /* ApiService.swift in Sources */,
 				939E52FF21AC944200CF722F /* POITableViewDelegate.swift in Sources */,
+				939E530A21ADE68000CF722F /* POITableViewCell.swift in Sources */,
 				939E52F921AC8CCD00CF722F /* POITableViewDatasource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

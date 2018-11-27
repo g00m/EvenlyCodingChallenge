@@ -12,7 +12,7 @@ import MapKit
 
 class POITableViewController: UITableViewController {
 
-    private var dataSource: POITableViewDatasource<UITableViewCell, Item>!
+    private var dataSource: POITableViewDatasource<POITableViewCell, Item>!
     private var delegate: POITableViewDelegate!
 
     private var viewModel: POIViewModel!
@@ -28,7 +28,7 @@ class POITableViewController: UITableViewController {
                 self.dataSource = POITableViewDatasource(cellIdentifier: "Cell",
                     items: self.viewModel.items,
                     configureCell: { cell, model in
-                        cell.textLabel?.text = model.venue.name
+                        cell.bind(item: model)                        
                     })
 
                 self.tableView.dataSource = self.dataSource
