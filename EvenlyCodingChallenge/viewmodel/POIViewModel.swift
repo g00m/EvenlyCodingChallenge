@@ -23,7 +23,7 @@ class POIViewModel {
     }
 
     func getPOIFromApi () {
-        apiService.getAllPOI(_at: 52.500342, lng: 13.425170, limit: 30) { fsqResponse in
+        apiService.getAllPOI(_at: 52.500342, lng: 13.425170, limit: 100) { fsqResponse in
             guard fsqResponse != nil else { return }
             self.items = fsqResponse!.response.groups[0].items
 
