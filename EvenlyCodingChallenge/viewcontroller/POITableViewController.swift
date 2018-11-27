@@ -48,16 +48,30 @@ class POITableViewController: UITableViewController {
             message: nil,
             preferredStyle: .actionSheet)
 
-        alert.addAction(UIAlertAction(title: "Share on Foursquare", style: .default) { UIAlertAction in
-
+        alert.addAction(UIAlertAction(title: "Share POI", style: .default) { UIAlertAction in
+                self.showShareSheet(_forItem: item)
             })
+
         alert.addAction(UIAlertAction(title: "Open in Maps", style: .default) { UIAlertAction in
                 self.openMaps(_forItem: item)
             })
+
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
 
         self.present(alert, animated: true, completion: nil)
 
+    }
+
+    private func showShareSheet(_forItem item: Item) {
+        
+        let headline = "Check out this awesome place it is called \(item.venue.name)\n\n"
+
+        if let fsqLink = NSURL(string: "https://foursquare.com/v/\(item.venue.id)") {
+            let activityVC = UIActivityViewController(activityItems: [headline, fsqLink],
+                                                      applicationActivities: nil)
+
+            self.present(activityVC, animated: true, completion: nil)
+        }
     }
 
     func openMaps(_forItem item: Item) {

@@ -24,8 +24,6 @@ struct FoursquareConfig: Codable {
 
 protocol Api {
     func getAllPOI (_at lat: NSNumber, lng: NSNumber, limit: Int, callback: @escaping (FoursquareResponse?) -> Void)
-
-    func sharePOI (poi: POI)
 }
 
 class ApiService: Api {
@@ -67,10 +65,6 @@ class ApiService: Api {
                 }
 
         }
-
-    }
-
-    func sharePOI(poi: POI) {
 
     }
 
