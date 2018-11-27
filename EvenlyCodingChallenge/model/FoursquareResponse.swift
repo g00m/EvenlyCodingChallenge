@@ -44,8 +44,8 @@ struct POI: Codable {
 
 struct Location: Codable {
     let address: String
-    let lat: Float
-    let lng: Float
+    let lat: Double
+    let lng: Double
     let distance: Int
     let formattedAddress: [String]
 
@@ -62,8 +62,8 @@ struct Location: Codable {
 
         address = try! container.decode(String.self, forKey: .address)
 
-        lat = try! container.decode(Float.self, forKey: .lat)
-        lng = try! container.decode(Float.self, forKey: .lng)
+        lat = try! container.decode(Double.self, forKey: .lat)
+        lng = try! container.decode(Double.self, forKey: .lng)
 
         distance = try! container.decode(Int.self, forKey: .distance)
         formattedAddress = try! container.decode([String].self, forKey: .formattedAddress)

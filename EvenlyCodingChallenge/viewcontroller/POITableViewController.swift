@@ -49,20 +49,20 @@ class POITableViewController: UITableViewController {
             preferredStyle: .actionSheet)
 
         alert.addAction(UIAlertAction(title: "Share on Foursquare", style: .default) { UIAlertAction in
-            
-        })
+
+            })
         alert.addAction(UIAlertAction(title: "Open in Maps", style: .default) { UIAlertAction in
-            self.openMaps(_forItem: item)
-        })
+                self.openMaps(_forItem: item)
+            })
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
 
         self.present(alert, animated: true, completion: nil)
 
     }
 
-    func openMaps(_forItem item : Item) {
-        let coordinate = CLLocationCoordinate2DMake(CLLocationDegrees(item.venue.location.lat),
-            CLLocationDegrees(item.venue.location.lng))
+    func openMaps(_forItem item: Item) {
+        let coordinate = CLLocationCoordinate2DMake(item.venue.location.lat,
+            item.venue.location.lng)
         let mapItem = MKMapItem(placemark: MKPlacemark(coordinate: coordinate, addressDictionary: nil))
         mapItem.name = item.venue.name
         mapItem.openInMaps()
