@@ -37,6 +37,7 @@ class POITableViewController: UITableViewController {
             })
 
         self.delegate = POITableViewDelegate { row in
+            self.tableView.deselectRow(at: IndexPath(row: row, section: 0), animated: true)
             self.showActionSheet(_forItem: self.viewModel.getItemAtRow(_atRow: row))
         }
         self.tableView.delegate = self.delegate
