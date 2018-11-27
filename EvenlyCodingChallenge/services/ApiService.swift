@@ -11,8 +11,8 @@ import Alamofire
 
 struct FoursquareConfig: Codable {
     let baseUrl = "https://api.foursquare.com/v2"
-    var clientID: String!
-    var clientSecret: String!
+    let clientID: String!
+    let clientSecret: String!
 
     enum CodingKeys: String, CodingKey {
         case baseUrl
@@ -28,8 +28,8 @@ protocol Api {
 
 class ApiService: Api {
 
-    var config: FoursquareConfig!
-    var sessionManager: SessionManager!
+    let config: FoursquareConfig
+    let sessionManager: SessionManager
 
     init(config: FoursquareConfig, sessionManager: SessionManager) {
         self.config = config
