@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "code": 200,
+    "requestId": "5bfdc70cf594df322714bc00"
+  },
+  "response": {
+    "suggestedFilters": {
+      "header": "Tap to show:",
+      "filters": [
+        {
+          "name": "Open now",
+          "key": "openNow"
+        }
+      ]
+    },
+    "warning": {
+      "text": "There aren't a lot of results near you. Try something more general, reset your filters, or expand the search area."
+    },
+    "suggestedRadius": 834,
+    "headerLocation": "Kreuzberg",
+    "headerFullLocation": "Kreuzberg, Berlin",
+    "headerLocationGranularity": "neighborhood",
+    "totalResults": 238,
+    "suggestedBounds": {
+      "ne": {
+        "lat": 52.50181535206835,
+        "lng": 13.420093519465128
+      },
+      "sw": {
+        "lat": 52.4991156922829,
+        "lng": 13.424473105370554
+      }
+    },
+    "groups": [
+      {
+        "type": "Recommended Places",
+        "name": "recommended",
+        "items": [
+          {
+            "reasons": {
+              "count": 0,
+              "items": [
+                {
+                  "summary": "This spot is popular",
+                  "type": "general",
+                  "reasonName": "globalInteractionReason"
+                }
+              ]
+            },
+            "venue": {
+              "id": "55672043498e74fae4e8be1d",
+              "name": "Biererei",
+              "contact": {},
+              "location": {
+                "address": "Oranienstr. 19",
+                "lat": 52.500465522175624,
+                "lng": 13.422283312417841,
+                "labeledLatLngs": [
+                  {
+                    "label": "display",
+                    "lat": 52.500465522175624,
+                    "lng": 13.422283312417841
+                  }
+                ],
+                "distance": 196,
+                "postalCode": "10999",
+                "cc": "DE",
+                "city": "Berlin",
+                "state": "Berlin",
+                "country": "Deutschland",
+                "formattedAddress": [
+                  "Oranienstr. 19",
+                  "10999 Berlin",
+                  "Deutschland"
+                ]
+              },
+              "categories": [
+                {
+                  "id": "5370f356bcbc57f1066c94c2",
+                  "name": "Beer Store",
+                  "pluralName": "Beer Stores",
+                  "shortName": "Beer Store",
+                  "icon": {
+                    "prefix": "https://ss3.4sqi.net/img/categories_v2/nightlife/beergarden_",
+                    "suffix": ".png"
+                  },
+                  "primary": true
+                }
+              ],
+              "verified": false,
+              "stats": {
+                "tipCount": 0,
+                "usersCount": 0,
+                "checkinsCount": 0,
+                "visitsCount": 0
+              },
+              "beenHere": {
+                "count": 0,
+                "lastCheckinExpiredAt": 0,
+                "marked": false,
+                "unconfirmedCount": 0
+              },
+              "photos": {
+                "count": 0,
+                "groups": []
+              },
+              "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+              }
+            },
+            "referralId": "e-0-55672043498e74fae4e8be1d-0"
+          }
+        ]
+      }
+    ]
+  }
+}

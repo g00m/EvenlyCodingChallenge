@@ -12,11 +12,11 @@ class POIViewModel {
     typealias Listener = () -> ()
 
     private let updateListener: Listener
-    private let apiService: ApiService
+    private let apiService: Api
 
     private (set) var items: [Item] = [Item]()
 
-    init(apiService: ApiService, updateListener: @escaping Listener) {
+    init(apiService: Api, updateListener: @escaping Listener) {
         self.apiService = apiService
         self.updateListener = updateListener
         self.getPOIFromApi()
