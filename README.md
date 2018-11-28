@@ -5,6 +5,12 @@
  - ~~Share POI from Foursquare~~
  - ~~Open Apple Maps with POI~~
 
+### Usage
+ Create a **Config.plist** inside your Bundle and add the Foursquare api keys:
+
+  - *client_id:*
+  - *client_secret*
+
 
  ### Future
  - DetailView for POI
